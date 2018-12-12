@@ -1,0 +1,29 @@
+{
+  "name": "tracktrace",
+  "version": "1.0.0",
+  "description": "Microservice for assets management(Track And Trace....)",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node app_src/server.js",
+    "build": "babel app_src --out-dir dist",
+    "serve": "node dist/server.js",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.16",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/node": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "nodemon": "^1.18.8"
+  }
+}
